@@ -5,22 +5,71 @@ from datetime import datetime
 import re
 
 HEADERS = {
-    "User-Agent": "research-parenting-sleep/1.0 (by u/tu_usuario)"
+    "User-Agent": "research-parenting-daily-care/1.0 (by u/tu_usuario)"
 }
 
 # Subreddits a consultar
 SUBREDDITS = ["Parenting", "beyondthebump"]
 
-# Temas relacionados con el sueño
+# Temas relacionados con cuidados diarios: alimentación, higiene, rutinas y bienestar físico
 TOPICS = [
-    "sleep",
-    "nightmare",
-    "wake up",
-    "insomnia",
-    "sleeping",
-    "nap",
-    "bedtime",
-    "sleep regression",
+    # Higiene y baño
+    "bath time",
+    "bathing",
+    "bath routine",
+    "hair washing",
+    "baby shampoo",
+    "bath products",
+    "skin care",
+    "moisturizer",
+    "lotion",
+    "diaper rash",
+    "dry skin",
+    "eczema",
+    "sunscreen",
+    "sun protection",
+    
+    # Cuidado dental
+    "brushing teeth",
+    "toothbrush",
+    "toothpaste",
+    "dental care",
+    "first tooth",
+    "teething",
+    
+    # Control de esfínteres
+    "potty training",
+    "toilet training",
+    "diaper free",
+    "underwear",
+    "accidents",
+    "wetting",
+    
+    # Alimentación
+    "feeding",
+    "breastfeeding",
+    "formula",
+    "bottle feeding",
+    "solid foods",
+    "baby led weaning",
+    "purees",
+    "picky eater",
+    "meal time",
+    "breakfast",
+    "lunch",
+    "dinner",
+    "snacks",
+    "eating habits",
+    "food texture",
+    "finger foods",
+    "self feeding",
+    "high chair",
+    
+    # Autonomía
+    "dressing",
+    "getting dressed",
+    "independence",
+    "self care",
 ]
 
 AGE_OVER_LIMIT_RE = re.compile(

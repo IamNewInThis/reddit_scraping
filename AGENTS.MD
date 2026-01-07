@@ -31,6 +31,15 @@ JSON por objeto:
   "selftext": "<pregunta o contexto autocontenido>"
 }
 
+## Guía para generar JSON desde Reddit (posts personalizados)
+- Objetivo: usar posts de Reddit como inspiración, pero producir prompts autocontenidos para un LLM.
+- Selección: elegir N posts relevantes y coherentes con el tema solicitado; evitar duplicados y casos demasiado similares.
+- Perfil: si se incluye un campo `profile`, debe ser coherente con la edad/etapa mencionada en `selftext` (p. ej., si dice “2 meses”, el `profile` no puede ser “5 años”).
+- Reescritura: eliminar cualquier mención a Reddit o comunidades, y convertir la pregunta en una solicitud práctica que un LLM pueda responder.
+- Claridad: si hay ambigüedad, resolverla en el texto final (sin inventar datos críticos).
+- Salida: cada objeto debe tener solo `title` y `selftext` (y `profile` si el flujo actual lo requiere), en el idioma del flujo.
+- Nota adicional: en flujos de `sleep_and_rest`, los archivos `en.json` y `pt.json` deben incluir un campo `"es"` con `{ "title": "...", "selftext": "..." }` para facilitar la revisión.
+
 ## Ejemplos
 - Antes (comunidad):
   title: "Pregunta para quien esté criando (o haya criado)"
