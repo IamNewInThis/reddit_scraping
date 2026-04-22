@@ -10,6 +10,17 @@ Instala dependencias:
 ```bash
 pip install -r requirements.txt
 ```
+**Activar el entorno virtual:**
+
+- En Linux/Mac:
+  ```bash
+  source venv/bin/activate
+  ```
+- En Windows:
+  ```cmd
+  .\venv\Scripts\activate
+  ```
+deactivate
 
 ## Uso
 Ejecuta el script principal:
